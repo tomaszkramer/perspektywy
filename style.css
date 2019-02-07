@@ -1,0 +1,88 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.parent {
+    max-width: 1138px;
+    margin: 0 auto;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.frame {
+    max-width: 1180px;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-top: 210px;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.frame div {
+    margin: 0px 20px 10px 20px;
+    min-width: 350px;
+    max-width: 350px;
+    height: 235px;
+    position: relative;
+    background-size: contain;
+    font-weight: bolder;
+}
+.frame:after {
+    content: "";
+    width: 100%;
+}
+
+.frame div:after {
+    content: "";
+    width: 350px;
+    height: 100px;
+    bottom: 0;
+    background-image: linear-gradient(transparent, black);
+    opacity: 0.7;
+    position: absolute;
+    z-index: 1;
+}
+
+
+.title {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    margin: 5px;
+    bottom: 0;
+}
+
+.old {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.old div {
+    margin: 0px 20px 10px 20px;
+    min-width: 350px;
+    max-width: 350px;
+    height: 235px;
+    position: relative;
+    background-size: contain;
+    font-weight: bolder;
+    opacity: 0.5;
+}
+
+.old div:after{
+    content: "";
+    width: 350px;
+    height: 100px;
+    bottom: 0;
+    background-image: linear-gradient(transparent, black);
+    opacity: 0.7;
+    position: absolute;
+    z-index: 1;
+}
+
+.old div:hover {
+    opacity: 1.0;
+}
+
